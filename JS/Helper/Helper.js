@@ -3,8 +3,8 @@
 function Helper(){
   "use strict", // 厳格モード構文(関数レベルの厳格モード構文)  
   //レシーバ値NGはnewだけする。
-  var _msg = "hello",
-  var _create = function(){
+  var _msg : "hello",
+  var _create : function(){
   return new Helper();
   }
 };
