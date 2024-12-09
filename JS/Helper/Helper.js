@@ -1,0 +1,3 @@
+// コンストラクタ
+function Helper(){
+};
