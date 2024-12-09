@@ -7,3 +7,8 @@ function Helper(){
     return new Helper();
   }
 };
+//  静的プロパティ
+Helper.msg = "hello";
+Helper.create = function(){
+  return new Helper();
+};
