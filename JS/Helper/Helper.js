@@ -1,10 +1,16 @@
 "use strict"; // 厳格モード構文
 // クラス定義＆コンストラクタ
+function Test(){
+  _msg : "hello",
+  _create : function(){
+  return new Helper();
+  }
+};
 function Helper(){
   "use strict", // 厳格モード構文(関数レベルの厳格モード構文)  
   //レシーバ値NGはnewだけする。
-  var _msg : "hello",
-  var _create : function(){
+  _msg : "hello",
+  _create : function(){
   return new Helper();
   }
 };
