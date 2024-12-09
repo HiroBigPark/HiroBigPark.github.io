@@ -5,8 +5,7 @@ function Test(){
 };
 Test.msg = "hello";
 
-function Helper(){
-  "use strict", // 厳格モード構文(関数レベルの厳格モード構文)  
+function Helper(){ 
   //レシーバ値NGはnewだけする。
 /*
 _create : function(){
