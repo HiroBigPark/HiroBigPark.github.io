@@ -3,7 +3,7 @@
 function Test(){
   _msg : "hello"
 };
-Test.msg = "hello";
+Test.msg = "Test";
 
 function Helper(){ 
   //レシーバ値NGはnewだけする。
