@@ -19,8 +19,7 @@ UnitTest.start = function(p1,p2){
   p1===undefined||UnitTest.Title=p1;
   p2===undefined||UnitTest.Case=p1;
   UnitTest.CaseNo = 0;
-  UnitTest.is(p1);
-  UnitTest.is(p2);
+  console.log("Start"+UnitTest.Title+" "+UnitTest.Case);
 }
 
 UnitTest.is = function(p1){
