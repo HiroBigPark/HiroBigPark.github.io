@@ -19,6 +19,6 @@ UnitTest.assert = function(p1){
   //(!p1)||true?
   var msg="テスト";
   //var msg=""+UnitTest.Title+UnitTest.Case+UnitTest.CaseNo;
-  console.assert(p1,msg);
+  console.assert(p1,"テスト");
   return p1;
 };
