@@ -2,11 +2,13 @@
 
 // クラス定義＆コンストラクタ
 var UnitTest=UnitTest||function(){};
+/*
 UnitTest = function (){
   _Title : "UnitTest",
   _Case : "Case",
   _CaseNo : 1
 };
+*/
 
 //  静的プロパティ
 UnitTest.Title = "UnitTest";
