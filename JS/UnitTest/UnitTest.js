@@ -26,5 +26,5 @@ UnitTest.is = function(p1){
 };
 
 UnitTest.eq = function(p1,p2){
-  return a === b;
+  return p1 === p2;
 }
