@@ -22,9 +22,8 @@
   // 以下のfunction内に読み込み完了時に実行してほしい内容を書く。
   window.onload = function () {
     UnitTest.title("UnitTestの単体テスト");
-    UnitTest.start("成功の表示");
+    UnitTest.start("表示の確認");
     UnitTest.is(true);
-    UnitTest.start("失敗の表示");
     UnitTest.is(false);
     UnitTest.start("数字の一致");
     UnitTest.is(UnitTest.eq(1+2,3));
