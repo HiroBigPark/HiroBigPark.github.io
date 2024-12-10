@@ -16,9 +16,7 @@ UnitTest.Case = "Case";
 UnitTest.CaseNo = 1;
 
 UnitTest.assert = function(p1){
-  //(!p1)||true?
   var msg=UnitTest.Title+" "+UnitTest.Case+" "+UnitTest.CaseNo;
-  console.log(p1,msg,p1);
-  //console.assert(p1);
-  return p1;
+  p1||console.log(p1,msg);
+  return p1;  
 };
