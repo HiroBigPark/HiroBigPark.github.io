@@ -22,10 +22,7 @@
   // 以下のfunction内に読み込み完了時に実行してほしい内容を書く。
   window.onload = function () {
     var ut=UnitTest;
-    alert(ut.Title);
-    alert(ut.Case);
-    alert(ut.No);
-    //+ut.Case+ut.CaseNo);
+    alert(ut.Title+ut.Case+ut.CaseNo);
     UnitTest.assert(true);
     UnitTest.assert(false);
   };
