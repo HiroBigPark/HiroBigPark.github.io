@@ -2,7 +2,7 @@
 // クラス定義＆コンストラクタ
 function Test(){
   _msg : "hello"
-};
+}
 Test.msg = "Test";
 
 function Helper(){ 
@@ -13,7 +13,7 @@ _create : function(){
   },
 */
   _msg : "hello"
-};
+}
 //  静的プロパティ
 Helper.msg = "hello";
 Helper.create = function(){
