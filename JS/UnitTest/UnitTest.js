@@ -16,7 +16,13 @@ UnitTest.Case = "Case";
 UnitTest.CaseNo = 1;
 
 UnitTest.assert = function(p1){
+}
+
+UnitTest.is = function(p1){
   var msg=UnitTest.Title+" "+UnitTest.Case+" "+UnitTest.CaseNo;
-  p1||console.log(p1,msg);
-  return p1;  
+  p1||console.log(p1,msg); 
 };
+
+UnitTest.eq = function(p1,p2){
+  return a === b;
+}
