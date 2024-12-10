@@ -19,8 +19,10 @@ UnitTest.assert = function(p1){
 }
 
 UnitTest.is = function(p1){
+  UnitTest.CaseNo = UnitTest.CaseNo + 1;
   var msg=UnitTest.Title+" "+UnitTest.Case+" "+UnitTest.CaseNo;
-  p1||console.log(p1,msg); 
+  console.log(p1,msg); 
+  //p1||console.log(p1,msg); 
 };
 
 UnitTest.eq = function(p1,p2){
