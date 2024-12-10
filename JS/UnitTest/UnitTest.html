@@ -21,9 +21,12 @@
 <script>
   // 以下のfunction内に読み込み完了時に実行してほしい内容を書く。
   window.onload = function () {
-  //  UnitTest.is(true);
-  //  UnitTest.is(false);
-    UnitTest.assert(false);
+    UnitTest.is(true);
+    UnitTest.is(false);
+    UnitTest.is(UnitTest.eq(true,true));
+    UnitTest.is(UnitTest.eq(true,false));
+    UnitTest.is(UnitTest.eq(false,true));
+    UnitTest.is(UnitTest.eq(false,false));
   };
 </script>
 </html>
