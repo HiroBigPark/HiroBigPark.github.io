@@ -1,18 +1,16 @@
 "use strict"; // 厳格モード構文
 // クラス定義＆コンストラクタ
 function Test(){
-  _msg : "hello"
+  _msg : "hello Test"
 }
 Test.msg = "Test";
 
 function Helper(){ 
   //レシーバ値NGはnewだけする。
-/*
-_create : function(){
+  create : function(){
   return new Helper();
   },
-*/
-  _msg : "hello"
+  _msg : "hello Helper"
 }
 //  静的プロパティ
 Helper.msg = "hello";
