@@ -17,9 +17,8 @@ UnitTest.CaseNo = 1;
 
 UnitTest.assert = function(p1){
   //(!p1)||true?
-  var msg="テスト";
-  //var msg=""+UnitTest.Title+UnitTest.Case+UnitTest.CaseNo;
-  console.log(p1,"テスト");
-  //console.assert(p1,"テスト");
+  var msg=UnitTest.Title+" "+UnitTest.Case+" "+UnitTest.CaseNo;
+  console.log(p1,msg,p1);
+  //console.assert(p1);
   return p1;
 };
