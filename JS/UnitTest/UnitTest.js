@@ -6,14 +6,14 @@ var UnitTest=UnitTest||function(){};
 UnitTest = function (){
   _Title : "UnitTest",
   _Case : "Case",
-  _CaseNo : 1
+  _CaseNo : 0
 };
 */
 
 //  静的プロパティ
 UnitTest.Title = "UnitTest";
 UnitTest.Case = "Case";
-UnitTest.CaseNo = 1;
+UnitTest.CaseNo = 0;
 
 UnitTest.assert = function(p1){
 }
