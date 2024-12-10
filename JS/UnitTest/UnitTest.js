@@ -30,9 +30,9 @@ UnitTest.eq = function(p1,p2){
 }
 
 UnitTest.title = function(p1,p2,p3){
-  UnitTest.Title=p1||UnitTest.Title;
-  UnitTest.Case=p2||UnitTest.Case;
-  UnitTest.CaseNo = p2||UnitTest.CaseNo;
+  UnitTest.Title = p1||UnitTest.Title;
+  UnitTest.Case = p2||UnitTest.Case;
+  UnitTest.CaseNo = p3||UnitTest.CaseNo;
   console.log("開始 "+UnitTest.Title);
 }
 
