@@ -21,7 +21,7 @@ UnitTest.CaseNo = 0;
 UnitTest.is = function(p1){
   UnitTest.CaseNo = UnitTest.CaseNo + 1;
   var msg=UnitTest.Title+" "+UnitTest.Case+" "+UnitTest.CaseNo;
-  (p1===false)||msg=mag+" 失敗"; 
+  (p1===false)||msg=msg+" 失敗"; 
   console.log(msg);
 };
 
@@ -38,6 +38,6 @@ UnitTest.title = function(p1,p2,p3){
 
 UnitTest.start = function(p1,p2){
   UnitTest.Case=p1||UnitTest.Case;
-  UnitTest.CaseNo=p2||0;
+  UnitTest.CaseNo=p2||UnitTest.CaseNo;
   console.log("Case "+UnitTest.Case);
 }
