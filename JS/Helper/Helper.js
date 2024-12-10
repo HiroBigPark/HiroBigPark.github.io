@@ -16,6 +16,6 @@ _create : function(){
 }
 //  静的プロパティ
 Helper.msg = "hello";
-Helper.create = function(){
+Helper.prototype.create = function(){
   return new Helper();
 };
