@@ -7,9 +7,6 @@ Test.msg = "Test";
 
 function Helper(){ 
   //レシーバ値NGはnewだけする。
-  create : function(){
-  return new Helper();
-  },
   _msg : "hello Helper"
 }
 //  静的プロパティ
