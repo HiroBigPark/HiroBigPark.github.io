@@ -1,11 +1,11 @@
 "use strict"; // 厳格モード構文
 // クラス定義＆コンストラクタ
-var Test function (){
+var Test = function (){
   _msg : "hello Test"
 }
 Test.msg = "Test";
 
-var Helper function (){ 
+var Helper = function (){ 
   //レシーバ値NGはnewだけする。
   _msg : "hello Helper"
 }
