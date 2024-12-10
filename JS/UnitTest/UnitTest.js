@@ -16,8 +16,8 @@ UnitTest.Case = "Case";
 UnitTest.CaseNo = 0;
 
 UnitTest.start = function(p1,p2){
-  //UnitTest.Title=p1;
-  //UnitTest.Case=p2;
+  p1===undefined||UnitTest.Title=p1;
+  p2===undefined||UnitTest.Case=p1;
   UnitTest.CaseNo = 0;
   UnitTest.is(p1);
   UnitTest.is(p2);
