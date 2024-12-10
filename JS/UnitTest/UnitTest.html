@@ -7,7 +7,10 @@
   <p id="UnitTest">UnitTest</p>
  </body>
 <script>
-  var ut=UnitTest;
-  alert(ut.Title+ut.Case+ut.CaseNo);
+  // 以下のfunction内に読み込み完了時に実行してほしい内容を書く。
+  window.onload = function () {
+    var ut=UnitTest;
+    alert(ut.Title+ut.Case+ut.CaseNo);
+  };
 </script>
 </html>
