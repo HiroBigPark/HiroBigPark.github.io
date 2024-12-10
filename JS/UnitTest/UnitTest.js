@@ -15,7 +15,12 @@ UnitTest.Title = "UnitTest";
 UnitTest.Case = "Case";
 UnitTest.CaseNo = 0;
 
-UnitTest.assert = function(p1){
+UnitTest.start = function(p1,p2){
+  //UnitTest.Title=p1;
+  //UnitTest.Case=p2;
+  UnitTest.CaseNo = 0;
+  UnitTest.is(p1);
+  UnitTest.is(p2);
 }
 
 UnitTest.is = function(p1){
