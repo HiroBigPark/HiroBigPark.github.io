@@ -1,4 +1,4 @@
-//"use strict"; // 厳格モード構文
+"use strict"; // 厳格モード構文
 // クラス定義＆コンストラクタ
 function Test(){
   _msg : "hello Test"
