@@ -29,16 +29,15 @@ UnitTest.eq = function(p1,p2){
   return p1 === p2;
 }
 
-UnitTest.start = function(p1,p2){
-  UnitTest.Title=p1;
-  UnitTest.Case=p2;
-  UnitTest.CaseNo = 0;
-  console.log("Start"+UnitTest.Title+" "+UnitTest.Case);
+UnitTest.title = function(p1,p2,p3){
+  UnitTest.Title=p1||UnitTest.Title;
+  UnitTest.Case=p2||UnitTest.Case;
+  UnitTest.CaseNo = p2||UnitTest.CaseNo;
+  console.log("開始 "+UnitTest.Title);
 }
 
-UnitTest.case = function(p1,p2){
-//p1===undefined||
-  UnitTest.Case=p1;
-  UnitTest.CaseNo = p2;
-  console.log("Start"+UnitTest.Title+" "+UnitTest.Case);
+UnitTest.start = function(p1,p2){
+  UnitTest.Case=p1||UnitTest.Case;
+  UnitTest.CaseNo=p2||0;
+  console.log("Case "+UnitTest.Case);
 }
