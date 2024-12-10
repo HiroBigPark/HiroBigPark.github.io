@@ -21,6 +21,7 @@
 <script>
   // 以下のfunction内に読み込み完了時に実行してほしい内容を書く。
   window.onload = function () {
+    UnitTest.start();
     UnitTest.is(true);
     UnitTest.is(false);
     UnitTest.is(UnitTest.eq(1+2,3));
