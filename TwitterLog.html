@@ -25,13 +25,16 @@
     }
     objYesterday.setDate(objToday.getDate() - 1);
     objTomorrow.setDate(objToday.getDate() + 2);
-    alert(objToday);
-    alert(objYesterday);
-    alert(objTomorrow);
     var strYear = ""+objToday.getFullYear();
     var strMonth = ""+objToday.getMonth();
     var strDate = ""+objToday.getDate();
-    alert(strYear+"年"+strMonth+"月"+strDate+"日");
-    getElementById("user");
+    var strToday=strYear+"-"+strMonth+"-"+strDate+"-";
+    alert(strToday);
+    
+    getElementById("user").value="hirobigpark";
+    getElementById("since").value=strToday;
+    getElementById("until").value=strToday;
+    getElementById("key").value="キーワード";
+
   </script>
 </html>
