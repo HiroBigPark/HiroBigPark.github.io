@@ -19,6 +19,10 @@
     var objToday = new Date();
     var objYesterday = new Date();
     var objTomorrow = new Date();
+    var zfill = function(str) {return ("00" + str).slice(-2);}
+    var strFtime = function(date) {
+      return date.getFullYear() +  zfill(date.getMonth() + 1) + zfill(date.getDate());
+    }
     objYesterday.setDate(objToday.getDate() - 1);
     objTomorrow.setDate(objToday.getDate() + 2);
     alert(objToday);
