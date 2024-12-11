@@ -20,10 +20,14 @@ UnitTest.CaseNo = 0;
 
 UnitTest.is = function(p1){
   UnitTest.CaseNo = UnitTest.CaseNo + 1;
-  var msg=UnitTest.Title+" "+UnitTest.Case+" "+UnitTest.CaseNo;
-  p1!==true && msg=msg+" 失敗";
-  console.log(msg);
+  console.log(UnitTest.msg(p1));
 };
+
+UnitTest.msg = function(p1){
+  var msg=UnitTest.Title+" "+UnitTest.Case+" "+UnitTest.CaseNo;
+  if(p1===false)msg=msg+" 失敗";
+  return msg;
+}
 
 UnitTest.eq = function(p1,p2){
   return p1 === p2;
