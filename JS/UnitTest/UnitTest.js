@@ -43,5 +43,6 @@ UnitTest.title = function(p1,p2,p3){
 UnitTest.start = function(p1,p2){
   UnitTest.Case=p1||UnitTest.Case;
   UnitTest.CaseNo=p2||UnitTest.CaseNo;
+  console.clear();
   console.log("Case "+UnitTest.Case);
 }
