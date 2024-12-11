@@ -20,8 +20,8 @@ UnitTest.CaseNo = 0;
 
 UnitTest.is = function(p1){
   UnitTest.CaseNo = UnitTest.CaseNo + 1;
-  var msg=p1||UnitTest.Title+" "+UnitTest.Case+" "+UnitTest.CaseNo+" 失敗";
-  msg=msg||UnitTest.Title+" "+UnitTest.Case+" "+UnitTest.CaseNo; 
+  var msg=UnitTest.Title+" "+UnitTest.Case+" "+UnitTest.CaseNo;
+  p1!==true && msg=msg+" 失敗";
   console.log(msg);
 };
 
