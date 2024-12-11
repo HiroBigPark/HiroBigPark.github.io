@@ -5,13 +5,11 @@
   <script src="./JS/UnitTest/UnitTest.js"></script>
 </head>
 <body>
-  <p>キーワード</p>
-  <input type="text" id="key" required />
-  <p>since: until:</p>
+  キーワード<input type="text" id="key" required />
+  since:とuntil:</br>
   <input type="text" id="since" required />
   <input type="text" id="until" required />
-  <p>ユーザー名</p>
-  <input type="text" id="user" required />
+  ユーザー名<input type="text" id="user" required />
   <p>最新から(f=live)</p>
   <input type="radio" id="user" required />
   <a href="https://x.com/search?q=from%3Ahirobigpark&src=typed_query&f=top">ついログ</a>
@@ -19,10 +17,17 @@
 </body>
   <script>
     var objToday = new Date();
+    var objYesterday = new Date();
+    var objTomorrow = new Date();
+    objYesterday.setDate(objToday.getDate() - 1);
+    objTomorrow.setDate(objToday.getDate() + 2);
     alert(objToday);
+    alert(objYesterday);
+    alert(objTomorrow);
     var strYear = ""+objToday.getFullYear();
     var strMonth = ""+objToday.getMonth();
     var strDate = ""+objToday.getDate();
     alert(strYear+"年"+strMonth+"月"+strDate+"日");
+    getElementById("user");
   </script>
 </html>
