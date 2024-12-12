@@ -9,7 +9,7 @@
   キーワード<input type="text" id="key" required /></br>
   since:とuntil:</br>
   <input type="text" id="since" required />
-  <input type="text" id="until" required />
+  <input type="text" id="until" required /></br>
   ユーザー名<input type="text" id="user" required /></br>
   <p>最新から(f=live)</p></br>
   <input type="radio" id="live" />
@@ -28,11 +28,11 @@
     objYesterday.setDate(objToday.getDate() - 1);
     objTomorrow.setDate(objToday.getDate() + 2);
     var strYear = ""+objToday.getFullYear();
-    var strMonth = ""+objToday.getMonth()+1;
+    var strMonth = ""+(objToday.getMonth()+1);
     var strDate = ""+objToday.getDate();
     var strToday=strYear+"-"+strMonth+"-"+strDate;
     strYear = ""+objYesterday.getFullYear();
-    strMonth = ""+objYesterday.getMonth()+1;
+    strMonth = ""+(objYesterday.getMonth()+1);
     strDate = ""+objYesterday.getDate();
     var strYesterday=strYear+"-"+strMonth+"-"+strDate;
     
