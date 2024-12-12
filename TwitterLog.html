@@ -6,13 +6,13 @@
 </head>
 <body>
 <form>
-  キーワード<input type="text" id="key" required />
+  キーワード<input type="text" id="key" required /></br>
   since:とuntil:</br>
   <input type="text" id="since" required />
   <input type="text" id="until" required />
-  ユーザー名<input type="text" id="user" required />
-  <p>最新から(f=live)</p>
-  <input type="radio" id="user" required />
+  ユーザー名<input type="text" id="user" required /></br>
+  <p>最新から(f=live)</p></br>
+  <input type="radio" id="live" />
 </form>
   <a href="https://x.com/search?q=from%3Ahirobigpark&src=typed_query&f=top">ついログ</a>
   <a href="https://x.com/search?q=from%3Ahirobigpark%20since%3A2024-12-11%20until%3A2024-12-12&src=typed_query&f=live">ついログ今日の最新</a>
@@ -28,11 +28,11 @@
     objYesterday.setDate(objToday.getDate() - 1);
     objTomorrow.setDate(objToday.getDate() + 2);
     var strYear = ""+objToday.getFullYear();
-    var strMonth = ""+objToday.getMonth();
+    var strMonth = ""+objToday.getMonth()+1;
     var strDate = ""+objToday.getDate();
     var strToday=strYear+"-"+strMonth+"-"+strDate;
     strYear = ""+objYesterday.getFullYear();
-    strMonth = ""+objYesterday.getMonth();
+    strMonth = ""+objYesterday.getMonth()+1;
     strDate = ""+objYesterday.getDate();
     var strYesterday=strYear+"-"+strMonth+"-"+strDate;
     
