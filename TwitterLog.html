@@ -31,10 +31,13 @@
     var strMonth = ""+objToday.getMonth();
     var strDate = ""+objToday.getDate();
     var strToday=strYear+"-"+strMonth+"-"+strDate;
-    alert(strToday);
+    strYear = ""+objYesterday.getFullYear();
+    strMonth = ""+objYesterday.getMonth();
+    strDate = ""+objYesterday.getDate();
+    var strYesterday=strYear+"-"+strMonth+"-"+strDate;
     
     document.getElementById("user").value="hirobigpark";
-    document.getElementById("since").value=strToday;
+    document.getElementById("since").value=strYesterday;
     document.getElementById("until").value=strToday;
     document.getElementById("key").value="キーワード";
 
